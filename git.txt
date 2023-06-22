@@ -1,1 +1,48 @@
-hi
+abc@b1fcd1dfe94e:~/workspace$ ls -a
+.  ..  app.py  .git  README.md  requirements.txt  .vscode
+abc@b1fcd1dfe94e:~/workspace$ git remote -v
+origin  https://github.com/iNeuron-Pvt-Ltd/neurolab-flask (fetch)
+origin  https://github.com/iNeuron-Pvt-Ltd/neurolab-flask (push)
+abc@b1fcd1dfe94e:~/workspace$ git remote rm origin
+abc@b1fcd1dfe94e:~/workspace$ git remote -v
+abc@b1fcd1dfe94e:~/workspace$ git add .
+abc@b1fcd1dfe94e:~/workspace$ git status
+On branch main
+nothing to commit, working tree clean
+abc@b1fcd1dfe94e:~/workspace$ git commit -m 'first commit'
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+  to set your account's default identity.
+  Omit --global to set the identity only in this repository.
+  
+  fatal: unable to auto-detect email address (got 'abc@b1fcd1dfe94e.(none)')
+  abc@b1fcd1dfe94e:~/workspace$ git config --global user.email "veeramreddivenkatesh2003@gmail.com"
+  abc@b1fcd1dfe94e:~/workspace$ git config --global user.name 'venkateswararao10'
+abc@b1fcd1dfe94e:~/workspace$ git commit -m 'firstcommit'
+On branch main
+nothing to commit, working tree clean
+abc@b1fcd1dfe94e:~/workspace$ git add .
+abc@b1fcd1dfe94e:~/workspace$ git commit -m 'firstcommit'
+[main 5a51c7a] firstcommit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 git.txt
+abc@b1fcd1dfe94e:~/workspace$ git branch -M main
+abc@b1fcd1dfe94e:~/workspace$ git remote add origin https://github.com/venkateswararao10/neurolab-git.git
+abc@b1fcd1dfe94e:~/workspace$ git push -u origin main
+Enumerating objects: 53, done.
+Counting objects: 100% (53/53), done.
+Delta compression using up to 64 threads
+Compressing objects: 100% (49/49), done.
+Writing objects: 100% (53/53), 10.44 KiB | 2.09 MiB/s, done.
+Total 53 (delta 13), reused 0 (delta 0)
+remote: Resolving deltas: 100% (13/13), done.
+To https://github.com/venkateswararao10/neurolab-git.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+abc@b1fcd1dfe94e:~/workspace$ 
