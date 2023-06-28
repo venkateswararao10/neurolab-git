@@ -1,0 +1,89 @@
+abc@43200e475eca:~/workspace$ ls -a
+.   app.py     .git        logs       priceprediction.egg-info  requirements.txt  src        .vscode
+..  artifacts  .gitignore  notebooks  ReadME.md                 setup.py          templates
+abc@43200e475eca:~/workspace$ git remote -v
+origin  https://github.com/iNeuron-Pvt-Ltd/neurolab-flask (fetch)
+origin  https://github.com/iNeuron-Pvt-Ltd/neurolab-flask (push)
+abc@43200e475eca:~/workspace$ git remote rm origin
+abc@43200e475eca:~/workspace$ git  init
+Reinitialized existing Git repository in /config/workspace/.git/
+abc@43200e475eca:~/workspace$ git add .
+abc@43200e475eca:~/workspace$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   .vscode/extensions.json
+        modified:   .vscode/settings.json
+        deleted:    README.md
+        new file:   ReadME.md
+        modified:   app.py
+        new file:   artifacts/model.pkl
+        new file:   artifacts/preprocessor.pkl
+        new file:   artifacts/raw.csv
+        new file:   artifacts/test.csv
+        new file:   artifacts/train.csv
+        new file:   notebooks/data/gemstone.csv
+        new file:   notebooks/eda.ipynb
+        new file:   notebooks/modeltraining.ipynb
+        modified:   requirements.txt
+        new file:   setup.py
+        new file:   src/__init__.py
+        new file:   src/components/__init__.py
+        new file:   src/components/dataingestion.py
+        new file:   src/components/datatransformation.py
+        new file:   src/components/modeltrainer.py
+        new file:   src/exception.py
+        new file:   src/logger.py
+        new file:   src/pipeline/__init__.py
+        new file:   src/pipeline/predictionpipeline.py
+        new file:   src/pipeline/trainingpipeline.py
+        new file:   src/utils.py
+        new file:   templates/home.html
+        new file:   templates/submit.html
+
+abc@43200e475eca:~/workspace$  git config --global user.email "veeramreddivenkatesh2003@gmail.com"
+abc@43200e475eca:~/workspace$ git config --global user.name 'venkateswararao10'
+abc@43200e475eca:~/workspace$ git commit -m 'firstcommit'
+[main 9f9cf6b] firstcommit
+ 29 files changed, 586771 insertions(+), 29 deletions(-)
+ create mode 100644 .gitignore
+ delete mode 100644 README.md
+ create mode 100644 ReadME.md
+ rewrite app.py (98%)
+ create mode 100644 artifacts/model.pkl
+ create mode 100644 artifacts/preprocessor.pkl
+ create mode 100644 artifacts/raw.csv
+ create mode 100644 artifacts/test.csv
+ create mode 100644 artifacts/train.csv
+ create mode 100644 notebooks/data/gemstone.csv
+ create mode 100644 notebooks/eda.ipynb
+ create mode 100644 notebooks/modeltraining.ipynb
+ create mode 100644 setup.py
+ create mode 100644 src/__init__.py
+ create mode 100644 src/components/__init__.py
+ create mode 100644 src/components/dataingestion.py
+ create mode 100644 src/components/datatransformation.py
+ create mode 100644 src/components/modeltrainer.py
+ create mode 100644 src/exception.py
+ create mode 100644 src/logger.py
+ create mode 100644 src/pipeline/__init__.py
+ create mode 100644 src/pipeline/predictionpipeline.py
+ create mode 100644 src/pipeline/trainingpipeline.py
+ create mode 100644 src/utils.py
+ create mode 100644 templates/home.html
+ create mode 100644 templates/submit.html
+abc@43200e475eca:~/workspace$ git branch -M main
+abc@43200e475eca:~/workspace$ git remote add origin https://github.com/venkateswararao10/diamond-price-prediction.git
+abc@43200e475eca:~/workspace$ git push -u origin main
+Enumerating objects: 85, done.
+Counting objects: 100% (85/85), done.
+Delta compression using up to 64 threads
+Compressing objects: 100% (80/80), done.
+Writing objects: 100% (85/85), 5.63 MiB | 2.33 MiB/s, done.
+Total 85 (delta 15), reused 0 (delta 0)
+remote: Resolving deltas: 100% (15/15), done.
+To https://github.com/venkateswararao10/diamond-price-prediction.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+abc@43200e475eca:~/workspace$ 
